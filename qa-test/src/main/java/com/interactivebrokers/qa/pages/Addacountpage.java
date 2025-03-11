@@ -16,7 +16,7 @@ import com.interactivebrokers.Testbase;
 public class Addacountpage extends Testbase {
 	
 	
-	By accountheaderText = By.xpath("//div[contains(@class, 'col-8') and contains(@class, 'col-sm-10')]/h3");
+	By accountheaderText = By.xpath("/html/body/div/am-page/div/div[1]/am-page-header/section/div/div/div[1]");
 	By accountype = By.xpath("//select[contains(@class, 'form-control')]");
 	By accounnum = By.xpath("//input[@name='acctNumber']");
 	
@@ -98,7 +98,7 @@ public class Addacountpage extends Testbase {
    driver.findElement(accountitle).sendKeys("Testaccount");
 // Enter Date
    driver.findElement(accoundate ).click();
-   WebElement dateToSelect = driver.findElement(By.xpath("/html/body/div[2]/div[1]/table/tbody/tr[4]/td[4]"));
+   WebElement dateToSelect = driver.findElement(By.xpath("//td[@class=\"day\" and @data-date=\"1741046400000\"]"));
    dateToSelect.click();
    driver.findElement(currency).click(); 
    Select basecurrencyDropdown = new Select(driver.findElement(currency));

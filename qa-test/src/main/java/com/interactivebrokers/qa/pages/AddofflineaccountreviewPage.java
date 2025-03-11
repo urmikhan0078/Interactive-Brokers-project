@@ -8,7 +8,7 @@ import com.interactivebrokers.Testbase;
 public class AddofflineaccountreviewPage extends Testbase{
 
 	
-	By continuebtn2 = By.xpath("//a[@role='button' and contains(@class, 'btn-primary') and contains(@class, 'white-space-normal')]");
+	By continuebtn2 = By.xpath("//a[contains(@class, 'btn') and contains(@class, 'btn-primary')]");
 	
 	public AddofflineaccountreviewPage (WebDriver driver) {
 	    this.driver = driver;

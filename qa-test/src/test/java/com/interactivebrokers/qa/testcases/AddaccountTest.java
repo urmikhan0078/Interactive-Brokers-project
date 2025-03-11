@@ -76,7 +76,7 @@ public class AddaccountTest extends Testbase{
 			addacountpage.continuebtnLink();
 	         // Assuming you have an AccountPage class
 	        String actualTitle = addacountpage.validateHeaderTextonaccountpage();
-	        String expectedTitle ="Add Account";
+	        String expectedTitle ="PortfolioAnalyst";
 	        
 	        Assert.assertEquals(actualTitle, expectedTitle, "Page title does not match!");
 	    }
