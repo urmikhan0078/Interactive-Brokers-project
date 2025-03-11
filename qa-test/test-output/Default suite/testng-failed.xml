@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.interactivebrokers.qa.testcases.AddaccountTest">
+      <class name="com.interactivebrokers.qa.testcases.AddofflinentertransactionTest">
         <methods>
-          <include name="ValidateHeaderTextonaccountpageText"/>
           <include name="setup"/>
-          <include name="createBrokerageaccountTest"/>
+          <include name="continuebtn"/>
         </methods>
-      </class> <!-- com.interactivebrokers.qa.testcases.AddaccountTest -->
+      </class> <!-- com.interactivebrokers.qa.testcases.AddofflinentertransactionTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

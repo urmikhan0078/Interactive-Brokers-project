@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-02T15:48:17 EST" name="Default suite" finished-at="2025-03-02T15:49:23 EST" duration-ms="66235">
+  <suite started-at="2025-03-11T12:38:49 EDT" name="MyTestSuite" finished-at="2025-03-11T12:41:09 EDT" duration-ms="139682">
     <groups>
     </groups>
-    <test started-at="2025-03-02T15:48:17 EST" name="Default test" finished-at="2025-03-02T15:49:23 EST" duration-ms="66235">
+    <test started-at="2025-03-11T12:38:49 EDT" name="MyTestforInteractivebroker" finished-at="2025-03-11T12:41:09 EDT" duration-ms="139682">
       <class name="com.interactivebrokers.qa.testcases.AddaccountTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.AddaccountTest@175c2241]" started-at="2025-03-02T15:48:17 EST" name="setup" finished-at="2025-03-02T15:48:21 EST" duration-ms="3878" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.AddaccountTest@4116aac9]" started-at="2025-03-11T12:40:03 EDT" name="setup" finished-at="2025-03-11T12:40:06 EDT" duration-ms="3641" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createBrokerageaccountTest()[pri:1, instance:com.interactivebrokers.qa.testcases.AddaccountTest@175c2241]" started-at="2025-03-02T15:48:21 EST" name="createBrokerageaccountTest" finished-at="2025-03-02T15:49:11 EST" duration-ms="50263" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="createBrokerageaccountTest()[pri:1, instance:com.interactivebrokers.qa.testcases.AddaccountTest@4116aac9]" started-at="2025-03-11T12:40:06 EDT" name="createBrokerageaccountTest" finished-at="2025-03-11T12:40:58 EDT" duration-ms="51648" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PING_IFRAME_FORM_DETECTION']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[element not interactable
+  (Session info: chrome=134.0.6998.36)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d2268f586b0f29147a9e49b883bcabbf, findElement {value=//*[@id='PING_IFRAME_FORM_DETECTION'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55992/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2268f586b0f29147a9e49b883bcabbf]]>
+Command: [3ecccc416e5b2dab8e585de7b9009c02, clickElement {id=f.3ED05BD7F08EB8EC653D06D629AEF96F.d.39578BDD0FAA01FD733E28D81D0DA990.e.143}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ecccc416e5b2dab8e585de7b9009c02)] -> xpath: //a[contains(@class, 'btn') and contains(@class, 'btn-primary')]]
+Session ID: 3ecccc416e5b2dab8e585de7b9009c02]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='PING_IFRAME_FORM_DETECTION']"}
-  (Session info: chrome=133.0.6943.142)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=134.0.6998.36)
 Build info: version: '4.29.0', revision: '5fc1ec94cb'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d2268f586b0f29147a9e49b883bcabbf, findElement {value=//*[@id='PING_IFRAME_FORM_DETECTION'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55992/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: d2268f586b0f29147a9e49b883bcabbf
+Command: [3ecccc416e5b2dab8e585de7b9009c02, clickElement {id=f.3ED05BD7F08EB8EC653D06D629AEF96F.d.39578BDD0FAA01FD733E28D81D0DA990.e.143}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.36, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\moham\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51380}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51380/devtoo..., se:cdpVersion: 134.0.6998.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3ecccc416e5b2dab8e585de7b9009c02)] -> xpath: //a[contains(@class, 'btn') and contains(@class, 'btn-primary')]]
+Session ID: 3ecccc416e5b2dab8e585de7b9009c02
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -44,11 +44,9 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-at com.interactivebrokers.qa.pages.Addofflinetransactionpage.clickcontinuebtn(Addofflinetransactionpage.java:37)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.interactivebrokers.qa.pages.Addofflinetransactionpage.clickcontinuebtn(Addofflinetransactionpage.java:60)
 at com.interactivebrokers.qa.testcases.AddaccountTest.createBrokerageaccountTest(AddaccountTest.java:63)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -78,60 +76,59 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBrokerageaccountTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.AddaccountTest@175c2241]" started-at="2025-03-02T15:49:11 EST" name="setup" finished-at="2025-03-02T15:49:16 EST" duration-ms="4129" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.AddaccountTest@4116aac9]" started-at="2025-03-11T12:40:58 EDT" name="setup" finished-at="2025-03-11T12:41:01 EDT" duration-ms="3266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidateHeaderTextonaccountpageText()[pri:2, instance:com.interactivebrokers.qa.testcases.AddaccountTest@175c2241]" started-at="2025-03-02T15:49:16 EST" name="ValidateHeaderTextonaccountpageText" finished-at="2025-03-02T15:49:23 EST" duration-ms="7887" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Page title does not match! expected [Add Account] but found [PortfolioAnalyst]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Page title does not match! expected [Add Account] but found [PortfolioAnalyst]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.interactivebrokers.qa.testcases.AddaccountTest.ValidateHeaderTextonaccountpageText(AddaccountTest.java:81)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="ValidateHeaderTextonaccountpageText()[pri:2, instance:com.interactivebrokers.qa.testcases.AddaccountTest@4116aac9]" started-at="2025-03-11T12:41:01 EDT" name="ValidateHeaderTextonaccountpageText" finished-at="2025-03-11T12:41:09 EDT" duration-ms="7611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHeaderTextonaccountpageText -->
       </class> <!-- com.interactivebrokers.qa.testcases.AddaccountTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.interactivebrokers.qa.testcases.CitibanksearchonPortfolioPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.CitibanksearchonPortfolioPageTest@7eac9008]" started-at="2025-03-11T12:39:05 EDT" name="setup" finished-at="2025-03-11T12:39:08 EDT" duration-ms="2925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="citibankserchTest()[pri:1, instance:com.interactivebrokers.qa.testcases.CitibanksearchonPortfolioPageTest@7eac9008]" started-at="2025-03-11T12:39:08 EDT" name="citibankserchTest" finished-at="2025-03-11T12:40:02 EDT" duration-ms="53837" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- citibankserchTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.interactivebrokers.qa.testcases.CitibanksearchonPortfolioPageTest@7eac9008]" started-at="2025-03-11T12:40:02 EDT" name="teardown" finished-at="2025-03-11T12:40:03 EDT" duration-ms="1048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.interactivebrokers.qa.testcases.CitibanksearchonPortfolioPageTest -->
+      <class name="com.interactivebrokers.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:38:50 EDT" name="setup" finished-at="2025-03-11T12:38:56 EDT" duration-ms="6097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest()[pri:1, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:38:56 EDT" name="loginTest" finished-at="2025-03-11T12:38:56 EDT" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:38:56 EDT" name="teardown" finished-at="2025-03-11T12:38:57 EDT" duration-ms="929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:38:57 EDT" name="setup" finished-at="2025-03-11T12:39:01 EDT" duration-ms="3455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyIBKRlogo()[pri:2, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:39:01 EDT" name="verifyIBKRlogo" finished-at="2025-03-11T12:39:04 EDT" duration-ms="3217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyIBKRlogo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.interactivebrokers.qa.testcases.LoginPageTest@6c6cb480]" started-at="2025-03-11T12:39:04 EDT" name="teardown" finished-at="2025-03-11T12:39:05 EDT" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.interactivebrokers.qa.testcases.LoginPageTest -->
+    </test> <!-- MyTestforInteractivebroker -->
+  </suite> <!-- MyTestSuite -->
 </testng-results>

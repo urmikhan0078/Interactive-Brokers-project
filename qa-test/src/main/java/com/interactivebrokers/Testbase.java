@@ -22,7 +22,7 @@ public class Testbase {
 		//initialize property file
 		prop=new Properties();
 		try {
-			FileInputStream ip= new FileInputStream("C:\\Users\\moham\\eclipse-workspace\\qa-test\\src\\main\\java\\com\\interactivebrokers\\qa\\confiq\\confiq.properties");
+			FileInputStream ip= new FileInputStream("C:\\Users\\moham\\git\\Interactive-Brokers-project\\qa-test\\src\\main\\java\\com\\interactivebrokers\\qa\\confiq\\confiq.properties");
 				prop.load(ip);
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
